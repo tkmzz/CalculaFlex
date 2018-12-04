@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/container_master">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
     <ImageView
@@ -23,6 +28,13 @@
         android:textSize="48sp"
         android:gravity="center" android:id="@+id/tvSuggestion"/>
 
+    <TextView
+        android:id="@+id/tvFuelRatio"
+        style="@style/header_subtitle"
+        android:text="@string/label_ration_fuel"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:layout_weight="0"/>
 
     <View style="@style/divider"/>
 
@@ -56,4 +68,6 @@
             android:text="Etanol"/>
     </LinearLayout>
 
-</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
